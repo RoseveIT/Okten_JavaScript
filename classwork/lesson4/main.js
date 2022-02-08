@@ -102,5 +102,21 @@
 //- створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 // function genRan(lim){
 //     let arr = [];
-//     for (let i = 0; i )
+//     for (let i = 0; i < lim; i++) {
+//         arr.push(Math.round(Math.random() * lim))
+//     }
+//     return arr;
 // }
+// document.write(`${genRan(50)}`)
+
+//- Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+// function array(...mas){
+//     let mas = [];
+//     for (let i = mas.length - 1; ri = 0; i >= 0; i--; ri++) {
+//         newArr[ri] = newArr[i];
+//     }
+//     return newArr
+// }
+// document.write(`${array([1,2,3,4,5])}`);
+
+
