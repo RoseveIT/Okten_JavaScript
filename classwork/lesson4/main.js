@@ -110,13 +110,13 @@
 // document.write(`${genRan(50)}`)
 
 //- Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-// function array(...mas){
-//     let mas = [];
-//     for (let i = mas.length - 1; ri = 0; i >= 0; i--; ri++) {
-//         newArr[ri] = newArr[i];
+// function array(mas){
+//     let masArr = [];
+//     let ri = 0;
+//     for (let i = mas.length - 1; i >= 0; i-- ) {
+//         masArr[ri] = mas[i];
+//         ri++;
 //     }
-//     return newArr
+//     return masArr
 // }
 // document.write(`${array([1,2,3,4,5])}`);
-
-
