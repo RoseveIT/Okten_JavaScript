@@ -233,7 +233,7 @@
     ];
 
 // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
-for (let user of usersList){
+for (let user of usersList) {
     let div = document.createElement('div');
 
     let id = document.createElement('div')
@@ -242,15 +242,14 @@ for (let user of usersList){
     let name = document.createElement('div')
     name.innerText = user.name
 
-    let surname = document.createElement('div')
-    surname.innerText = user.username
+    let username = document.createElement('div')
+    username.innerText = user.username
 
     let email = document.createElement('div')
     email.innerText = user.email
 
     let address = document.createElement('div')
-    for (let childAddress in user.address){
-
+    for (let childAddress in user.address) {
         let street = document.createElement('div')
         street.innerText = childAddress
 
@@ -263,39 +262,70 @@ for (let user of usersList){
         let zipcode = document.createElement('div')
         zipcode.innerText = childAddress
 
-        let geo = document.createElement('geo')
-        for (let childGeo in user.address.geo){
-
-            let lat =document.createElement('div')
-            lat.innerText = childGeo
-
-            let lng = document.createElement('div')
-            lng.innerText = childGeo
-
-            geo.append(lat,lng)
-        }
+        address.append(street, suite, city, zipcode)
     }
-
-    let phone = document.createElement('div')
-    phone.innerText = user.phone
-
-    let website = document.createElement('div')
-    website.innerText = user.website
-
-    let company = document.createElement('div')
-    for (let childCom in user.company){
-        let name = document.createElement('div')
-        name.innerText = childCom
-
-        let catchPhrase = document.createElement('div')
-        catchPhrase.innerText = childCom
-
-        let bs = document.createElement('div')
-        bs.innerText = childCom
-
-        company.append(name, catchPhrase ,bs)
-    }
-
-    div.append(id, name, surname, email, address, phone, website, company)
+    div.append(id, name, username, email, address)
     document.body.appendChild(div)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     let geo = document.createElement('geo')
+//     for (let childGeo in user.address){
+//
+//         let lat =document.createElement('div')
+//         lat.innerText = childGeo
+//
+//         let lng = document.createElement('div')
+//         lng.innerText = childGeo
+//
+//         geo.append(lat,lng)
+//     }
+//     address.append(street, suite, city, zipcode, geo )
+// }
+//
+// let phone = document.createElement('div')
+// phone.innerText = user.phone
+//
+// let website = document.createElement('div')
+// website.innerText = user.website
+//
+// let company = document.createElement('div')
+// for (let childCom in user.company){
+//     let ddd = document.createElement('div')
+//     let name = document.createElement('div')
+//     name.innerText = childCom
+//
+//     let catchPhrase = document.createElement('div')
+//     catchPhrase.innerText = childCom
+//
+//     let bs = document.createElement('div')
+//     bs.innerText = childCom
+//
+//     company.append(name, catchPhrase ,bs)
+// }
+//
+// div.append(id, name, surname, email, address, phone, website, company)
+// document.body.appendChild(div)
