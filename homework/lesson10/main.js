@@ -24,11 +24,11 @@
 // }
 
 //- Создайте меню, которое раскрывается/сворачивается при клике
-// let menuEl = document.querySelector('.menu')
-// let titleEl = menuEl.querySelector('title')
-// titleEl.onclick = function (){
-//     menuEl.classList.toggle('hidden')
-// }
+let menuEl = document.querySelector('.menu')
+let titleEl = menuEl.querySelector('.title')
+titleEl.onclick = function (){
+    menuEl.classList.toggle('hidden');
+}
 
 //- Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 // Вывести список комментариев в документ, каждый в своем блоке.
