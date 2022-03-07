@@ -109,16 +109,19 @@
 // Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 // Кинути алерт з попередженням у випадку якщо містить.
 //Перевірку робити при натисканні на кнопку
-// let badWords = ['дурак','клоун','ванючка'];
-// let inputOne = document.createElement('input');
-// let button = document.createElement('button');
-// button.innerText = "Check"
-// document.body.append(inputOne,button);
-//
-// button.addEventListener('click', function (){
-//     let innerV = inputOne.value;
-//         if (innerV.toLowerCase().includes(`${badWords}`)){
-//             alert('krya-krya')
-//             inputOne.value = ''
-//         }
-// })
+let badWords = ['дурак','клоун','ванючка'];
+let inputOne = document.createElement('input');
+let button = document.createElement('button');
+button.innerText = "Check"
+document.body.append(inputOne,button);
+
+button.addEventListener('click', function (){
+    let innerV = inputOne.value;
+    for (let mat of badWords){
+        if (innerV.toLowerCase().includes(`${mat}`)){
+            alert('krya-krya')
+            inputOne.value = ''
+        }
+    }
+
+})
