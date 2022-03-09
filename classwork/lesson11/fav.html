@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="divList"></div>
+<script>
+    let divList = document.getElementById('divList')
+    let myFav = JSON.parse(localStorage.getItem('fav'))
+    for (let user of myFav){
+        let divUser = document.createElement('div')
+        divUser.innerText = user.name
+        divList.append(divUser)
+    }
+</script>
+</body>
+</html>
