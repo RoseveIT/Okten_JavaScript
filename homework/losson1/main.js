@@ -142,4 +142,4 @@
 //     document.write(str - a + "<br/>");
 //     document.write(str * "2" + "<br/>");
 //     document.write(str / 2 + "<br/>");
-
+console.log(4/0)
