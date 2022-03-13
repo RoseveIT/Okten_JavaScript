@@ -23,7 +23,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                     .then(value => value.json())
                     .then(comments => {
                         for (let comment of comments){
-                            if (post.id === comment.id){
+                            if (post.id === comment.postId){
                                 let postDivComment = document.createElement('div');
                                 postDivComment.classList.add('comment');
                                 postDivComment.innerHTML = `
