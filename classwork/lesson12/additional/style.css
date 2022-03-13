@@ -1,0 +1,44 @@
+*{
+    font-family: monospace;
+    font-size: 18px;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.userDiv{
+    margin: 10px;
+    padding: 20px 50px 20px 50px;
+    width: 1000px;
+    min-height: 100px;
+    border: 2px solid black;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.userDiv p{
+    margin-bottom: 0;
+    margin-top: 32px;
+}
+.userDiv h3 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+.postDivUser h4{
+    text-align: center;
+    margin-bottom: 0;
+}
+.postDivUser p{
+    margin-bottom: 0;
+    margin-top: 22px;
+}
+.comment{
+    width: 800px;
+    min-height: 100px;
+}
