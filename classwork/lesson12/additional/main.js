@@ -50,7 +50,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                             btnComment.classList.add('btnComment');
                             btnComment.innerText = 'Show comment'
                             btnComment.onclick = ()=>{
-                                fetch('https://jsonplaceholder.typicode.com/posts'+ post.id +'/comments')
+                                fetch('https://jsonplaceholder.typicode.com/posts/'+ post.id +'/comments')
                                     .then(value => value.json())
                                     .then(comments => {
                                         for (let comment of comments){
