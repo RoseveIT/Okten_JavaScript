@@ -1,0 +1,26 @@
+
+.containerPost{
+
+}
+.postCon{
+    margin-top: 5px;
+    width: 620px;
+    min-height: 50px;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.a{
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}

@@ -1,0 +1,28 @@
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.divUserLine{
+    width: 300px;
+    margin-top: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.divUser{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+    font-size: large;
+    font-family: monospace;
+}
